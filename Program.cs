@@ -34,6 +34,7 @@ class Program
                 if (!currentValidator.IsValid(testString))
                 {
                     PrintMessage(testString, currentValidator.returnNum);
+                    continue;
                 }
             }
 
