@@ -1,4 +1,4 @@
-﻿
+﻿using Xunit;
 namespace PinValidator;
 
 class Program
@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         var lengthValidator = new LengthValidator();
-        Console.WriteLine(lengthValidator.IsValid("13579"));
+        Assert.False(lengthValidator.IsValid("13579"));
     }
 }
 
