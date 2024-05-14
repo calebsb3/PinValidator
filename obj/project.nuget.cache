@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "XPCgELpaokE/RWCUE3TVPFxL+egvHQmRkdcmSbe0UJLz9i4RMsb2Yxbo7nRfHPgLKGzruF/WpIHfpBQKD7Ut/w==",
+  "dgSpecHash": "Exa70R1LGpg+ltr9UNFLefZ0f7pzm0MlReezL9/lRi606lazbmAWnOZm3ai606gVaoUQW/87ci5DvZ+Kd5e/iQ==",
   "success": true,
   "projectFilePath": "/Users/calebbelk/Documents/Dev_projects/PinValidator/PinValidator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/calebbelk/.nuget/packages/xunit/2.8.0/xunit.2.8.0.nupkg.sha512",
+    "/Users/calebbelk/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
+    "/Users/calebbelk/.nuget/packages/xunit.analyzers/1.13.0/xunit.analyzers.1.13.0.nupkg.sha512",
+    "/Users/calebbelk/.nuget/packages/xunit.assert/2.8.0/xunit.assert.2.8.0.nupkg.sha512",
+    "/Users/calebbelk/.nuget/packages/xunit.core/2.8.0/xunit.core.2.8.0.nupkg.sha512",
+    "/Users/calebbelk/.nuget/packages/xunit.extensibility.core/2.8.0/xunit.extensibility.core.2.8.0.nupkg.sha512",
+    "/Users/calebbelk/.nuget/packages/xunit.extensibility.execution/2.8.0/xunit.extensibility.execution.2.8.0.nupkg.sha512",
+    "/Users/calebbelk/.nuget/packages/xunit.runner.visualstudio/2.8.0/xunit.runner.visualstudio.2.8.0.nupkg.sha512"
+  ],
   "logs": []
 }
