@@ -17,6 +17,7 @@ class Program
             "3456",
             "7654"
         };
+
         List<IValidator> validators = new List<IValidator>
         {
             new LengthValidator(),
@@ -27,24 +28,27 @@ class Program
 
         foreach (var testString in tests)
         {
-            var validatorsQueue = new Queue<IValidator>(validators);
-            while (validatorsQueue.Count > 0)
-            {
-                var currentValidator = validatorsQueue.Dequeue();
-                if (!currentValidator.IsValid(testString))
-                {
-                    PrintMessage(testString, currentValidator.returnNum);
-                    continue;
-                }
-            }
-
-            var validPinReturnNum = testString.Length == 4 ? 0 : 1;
-            PrintMessage(testString, validPinReturnNum);
+           PrintMessage(testString, RunValidators(testString, validators));
         }
     }
 
     static void PrintMessage(string currentTest, int result){
         Console.WriteLine($"string {currentTest} returned this validation message: {result}");
+    }
+
+    static int RunValidators(string currentTestPin, List<IValidator> validators)
+    {
+        var validatorsQueue = new Queue<IValidator>(validators);
+        while (validatorsQueue.Count > 0)
+        {
+            var currentValidator = validatorsQueue.Dequeue();
+            if (!currentValidator.IsValid(currentTestPin))
+            {
+                return currentValidator.returnNum;
+            }
+        }
+
+        return currentTestPin.Length == 4 ? 0 : 1;
     }
 }
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PinValidator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30a8f9ec98bfc40ee26614c9d6e75f4eb864014d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd938f41d80dd0fef98ff029d5f8c4f3b1f5410c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PinValidator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PinValidator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
