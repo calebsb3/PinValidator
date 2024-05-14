@@ -1,9 +1,24 @@
-﻿namespace PinValidator;
+﻿
+namespace PinValidator;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var lengthValidator = new LengthValidator();
+        Console.WriteLine(lengthValidator.IsValid("13579"));
+    }
+}
+
+public interface IValidator {
+    int returnNum {get;}
+    bool IsValid(string possiblePin);
+}
+
+public class LengthValidator : IValidator {
+    public int returnNum { get { return 2;}}
+
+    public bool IsValid(string possiblePin){
+        return true;
     }
 }
